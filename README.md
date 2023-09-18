@@ -118,6 +118,11 @@ Following data transformation and cleaning, dimensions and fact tables were desi
 
 These tables establish a structured foundation for efficient data warehousing, enabling data analysts and scientists to perform advanced analytics and gain insights from the data.
 
+## ENTITY RELATIONSHIP DIAGRAM
+
+![](https://github.com/Ebuka456/AVONMAET-DFA23-DE-SOLUTION/blob/main/DE_ETL_DATAFEST2023/ERD.png)
+
+
 ## Query Optimization, Final Quality Check, and Documentation
 To enhance query performance, clustering keys were employed to determine the physical storage order of data, reducing data movement during query execution. Additionally, comprehensive quality checks were conducted to ensure the data's cleanliness and integrity.
 
