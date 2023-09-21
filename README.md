@@ -2,10 +2,10 @@
 
 <p align="center" > <img  src="https://github.com/Ebuka456/DE_ETL_DATAFEST2023/blob/main/DE_ETL_DATAFEST2023/ETL.png" alt="Alt text" style= "width: 700px; height: 350px"/></p>
 
-## Overview
+## 📘 Overview
 This document outlines the detailed steps undertaken during the ETL (Extract, Transform, Load) process for Agricultural Monitoring Systems. The primary objective of this data engineering project is to efficiently extract raw sensor data, perform necessary data transformations, and load the curated data into structured fact and dimension tables within our Snowflake data warehouse.
 
-## ETL Steps
+## 📘 ETL Steps
 
 ### Step 1: Data Extraction
 Raw data is sourced from various heterogeneous systems, including SensorDataRaw, WeatherDataRaw, SoilDataRaw, CropDataRaw, PestDataRaw, IrrigationDataRaw, and LocationDataRaw. These diverse data streams are ingested into designated staging tables (STG_CROPDATARAW, STG_IRRIGATIONDATARAW, STG_LOCATIONDATARAW, STG_PESTDATARAW, STG_SENSORDATARAW, STG_SOILDATARAW, STG_WEATHERDATARAW) within the AVONMAET Data Warehouse Schema.
@@ -94,7 +94,9 @@ The data in the staging tables undergo comprehensive preprocessing and data qual
 - Addressed invalid characters in the Sensor ID column.
 - Ensured consistent data types.
 
-## Creation of Dimensions and Fact Tables
+Check out the SQL scripts used for Data Transformation [Here](https://github.com/Ebuka456/AVONMAET-DFA23-DE-SOLUTION/blob/main/DE_ETL_DATAFEST2023/ETL%20DOCUMENTATION.sql)
+
+## 📘 Creation of Dimensions and Fact Tables
 Following data transformation and cleaning, dimensions and fact tables were designed and constructed to facilitate data analysis and reporting. Here's an outline of these tables:
 
 ### Dimension Tables
@@ -116,14 +118,21 @@ Following data transformation and cleaning, dimensions and fact tables were desi
 5. Fact_Soil
 6. Fact_Weather
 
-These tables establish a structured foundation for efficient data warehousing, enabling data analysts and scientists to perform advanced analytics and gain insights from the data.
+These tables establish a structured foundation for efficient data warehousing, enabling data analysts and scientists to perform advanced analytics and gain insights from the data. The scripts to do this can be seen [Here](https://github.com/Ebuka456/AVONMAET-DFA23-DE-SOLUTION/blob/main/DE_ETL_DATAFEST2023/ETL%20DOCUMENTATION.sql)
 
-## ENTITY RELATIONSHIP DIAGRAM
+## 📘 ENTITY RELATIONSHIP DIAGRAM
 
 ![](https://github.com/Ebuka456/AVONMAET-DFA23-DE-SOLUTION/blob/main/DE_ETL_DATAFEST2023/ERD.png)
 
+For more details on the structure, check the [Data Dictionary](https://github.com/Ebuka456/AVONMAET-DFA23-DE-SOLUTION/blob/main/DE_ETL_DATAFEST2023/DATA%20DICTIONARY%20FOR%20DE%20DFA%20DATATHON.pdf)
 
-## Query Optimization, Final Quality Check, and Documentation
+
+## 📘 Query Optimization, Final Quality Check, and Documentation
 To enhance query performance, clustering keys were employed to determine the physical storage order of data, reducing data movement during query execution. Additionally, comprehensive quality checks were conducted to ensure the data's cleanliness and integrity.
 
 For more details, including SQL scripts and additional information, please refer to the accompanying documentation.
+
+## 📘 Challenges Faced
+There are several noteworthy challenges that were encountered during the execution of this project. While these challenges may initially appear technical in nature, understanding and addressing them is fundamental to optimizing our future endeavors. I elaborated on each of these challenges in a straightforward manner [here](https://github.com/Ebuka456/AVONMAET-DFA23-DE-SOLUTION/blob/main/DE_ETL_DATAFEST2023/CHALLENGES%20FACED.pdf)
+
+
